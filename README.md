@@ -1,11 +1,14 @@
 # Simulação de Gravidade com Pyglet
  Esse programa utiliza a biblioteca Pyglet para realizar simulações de sistemas gravitacionais em 2D. Nele se é possível criar n corpos no espaço e definir suas velocidades e direções iniciais. Após isso, a simulação está pronta para ser iniciada, será possível observar a interação que os planetas tem entre si e também um gráfico que contem a decomposição do vetor velocidade (em x e y) ao longo da trajetória em tempo real.
 
+ As imagens de astros disponíveis são apenas Sol, Terra e Lua, cada um com sua massa e tamanho aparente distintos (fora de escala para melhor vizualização)
+ 
  # Como usar o Simulador
+ O simulador não lida bem com colisões, tente evitá-las
  1. Adicionar corpos:
    - Clique na tela para adicionar um corpo.
-   - Tem que explicar como que muda um corpo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    - Ainda segurando o botão esquerdo araste o mouse para definir a direção e a velocidade inicial do corpo.
+   - Após isso, é possível trocar o astro que está sendo adicionado clicando nos botões 1, 2 e 3, sendo referentes a Lua, Terra e Sol respectivamente
 2. Iniciar a simulção:
   - Após ja ter adicionado um corpo com sua direção e velocidade basta apenas apertar Enter e observar a simulação.
 
