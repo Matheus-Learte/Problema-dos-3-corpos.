@@ -26,13 +26,13 @@
 
 onde:
 
-$G$: Constante gravitacional.
+$G$: Constante de gravitação, tem valor de $6,67 \times 10^{-11} N \, m^2 \, kg^{-2}.$
 
-$m_1$ e $m_2$: Massa dos corpos.
+$m_1$ e $m_2$: Massa dos corpos 1 e 2 respectivamente.
 
 $r$: distância entre os dois corpos.
 
-$\hat{r}$: vetor unitário na direção que conecta os dois corpos.
+$\hat{r}$: versor radial centrado no corpo que produz a força.
 
 ## Leis de Kepler
  A melhor forma de demonstrar as leis do movimento planetário, desenvolvidas por Kepler, é por meio de um sistema de dois corpos em que um está praticamente parado. Por familiaridade trataremos eles como um simples sistema Sol-Terra.
