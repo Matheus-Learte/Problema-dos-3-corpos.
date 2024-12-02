@@ -38,4 +38,4 @@ r(com chapeu em cima): vetor unitário na direção que conecta os dois corpos.
 3. A razão entre o quadrado do período orbital de um objeto e o cubo do semi-eixo maior de sua órbita é a mesma para todos os objetos que orbitam o mesmo primário. Como vai simular isso???????????????????????????????
  
 ## Sistema de Três Corpos
-
+O programa permite que o usuário escolha quaisquer configurações iniciais para os objetos, porém, é interessante deixar algumas situações já pré-preparadas, algumas delas serão soluções estáveis e outra um sistema Lua-Terra-Sol
