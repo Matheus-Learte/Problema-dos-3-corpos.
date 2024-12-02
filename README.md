@@ -30,3 +30,5 @@ r(com chapeu em cima): vetor unitário na direção que conecta os dois corpos.
 ## Leis de Kepler
  Através do simulador conseguimos observar as Leis propostar por Kepler em ação quando realizamos um sistema de dois corpos
 
+## Sistema de Três Corpos
+
