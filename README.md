@@ -13,7 +13,7 @@
  
  A Lei proposta por Newton diz que a força gravitacional entre dois corpos é dada por:
  <div align="center">
-  <img src="https://latex.codecogs.com/png.latex?\pagecolor{black}F%20%3D%20G%20\frac{m_1m_2}{r^2}"
+  <img src="https://latex.codecogs.com/png.latex?\pagecolor{black}F%20%3D%20G%20\frac{m_1m_2}{r^2}\hat{r}%20"
 alt="Equação da Gravidade" width="200"/>
 </div>
 
