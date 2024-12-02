@@ -4,8 +4,13 @@
  As imagens de astros disponíveis são apenas Sol, Terra e Lua, cada um com sua massa e tamanho aparente distintos (fora de escala para melhor vizualização)
  
  # Como usar o Simulador
- O simulador não lida bem com colisões, tente evitá-las
- 1. Adicionar corpos:
+ Recado: O simulador não lida bem com colisões, tente evitá-las
+ 
+ ## Recursos Necessários
+ Certifique-se que seu computador tem a versão python 3.10+ devidamente instalada, caso tiver instale as bibliotecas pyglet, matplotlib e numpy.
+
+ ## Efetivar a Simulação
+1. Adicionar corpos:
    - Clique na tela para adicionar um corpo.
    - Ainda segurando o botão esquerdo araste o mouse para definir a direção e a velocidade inicial do corpo.
    - Por fim, é possível trocar o astro que está sendo adicionado clicando nos botões 1, 2 e 3, sendo referentes a Lua, Terra e Sol respectivamente
@@ -47,3 +52,7 @@ $\hat{r}$: versor radial centrado no corpo que produz a força.
  
 ## Sistema de Três Corpos
 O programa permite que o usuário escolha quaisquer configurações iniciais para os objetos, porém, é interessante deixar algumas situações já pré-preparadas, algumas delas serão soluções estáveis e outra um sistema Lua-Terra-Sol
+
+##Autores
+Essa simulação foi desenvolvida por Murilo Leandro Garcia, Matheus Guilherme Ferreira Mendonça Learte e Renan Banci Catarin. Se trata de um projeto para a disciplina de física
+
