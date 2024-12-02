@@ -10,6 +10,7 @@
 
 # Física implementada
  A física por trás da simulação é relacionada com a Lei da Gravitação Universal prosposta por Isaac Newton, onde a aceleração de cada corpo é calculada considerando as forças gravitacionais que ele sente devido a presença dos outros corpos no sistema.
+ 
  A Lei proposta por Newton diz que a força gravitacional entre dois corpos é dada por:
  <div align="center">
   <img src="https://latex.codecogs.com/png.latex?\pagecolor{black}F%20%3D%20G%20\frac{m_1m_2}{r^2}"
