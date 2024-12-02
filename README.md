@@ -17,8 +17,12 @@
 alt="Equação da Gravidade" width="200"/>
 </div>
 onde:
+
 G: Constante gravitacional.
+
 m1 e m2: Massa dos corpos.
+
 r: distância entre os dois corpos.
+
 r(com chapeu em cima): vetor unitário na direção que conecta os dois corpos.
 
