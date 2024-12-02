@@ -8,9 +8,12 @@
  1. Adicionar corpos:
    - Clique na tela para adicionar um corpo.
    - Ainda segurando o botão esquerdo araste o mouse para definir a direção e a velocidade inicial do corpo.
-   - Após isso, é possível trocar o astro que está sendo adicionado clicando nos botões 1, 2 e 3, sendo referentes a Lua, Terra e Sol respectivamente
+   - Por fim, é possível trocar o astro que está sendo adicionado clicando nos botões 1, 2 e 3, sendo referentes a Lua, Terra e Sol respectivamente
 2. Iniciar a simulção:
   - Após ja ter adicionado um corpo com sua direção e velocidade basta apenas apertar Enter e observar a simulação.
+3. Parar a simulação:
+  - Para reiniciar a simulação e iniciar uma nova basta apertar a tecla "R"
+  - Para fechar o programa basta que aperte Enter enquanto a simulação esteja rodando.
 
 # Física implementada
  A física por trás da simulação é relacionada com a Lei da Gravitação Universal prosposta por Isaac Newton, onde a aceleração de cada corpo é calculada considerando as forças gravitacionais que ele sente devido a presença dos outros corpos no sistema.
