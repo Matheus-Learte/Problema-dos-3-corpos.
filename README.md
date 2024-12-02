@@ -1,10 +1,10 @@
-# Simulação de Gravidade com Pyglet
- Esse programa utiliza a biblioteca Pyglet para realizar simulações de sistemas gravitacionais em 2D. Nele se é possível criar n corpos no espaço e definir suas velocidades e direções iniciais. Após isso, a simulação está pronta para ser iniciada, será possível observar a interação que os planetas tem entre si e também um gráfico que contem a decomposição do vetor velocidade (em x e y) ao longo da trajetória em tempo real.
+# Descrição
+ Esse programa utiliza a biblioteca Pyglet para realizar simulações de sistemas gravitacionais em 2D. Nele se é possível criar n corpos no espaço e definir suas velocidades e direções iniciais. Após isso, a simulação está pronta para ser iniciada, será possível observar a interação que os planetas tem entre si e também um gráfico que contem a decomposição do vetor velocidade (em x e y) ao longo da trajetória em tempo real. Apesar de o projeto suportar n corpos, a sua motivação principal é descrever o movimento de sistemas com dois e três corpos, demonstrando as Leis de Kepler e modelos interessantes como estados iniciais dos 3 corpos.  Além disso a simulação será livre para o usuário intragir.
 
  As imagens de astros disponíveis são apenas Sol, Terra e Lua, cada um com sua massa e tamanho aparente distintos (fora de escala para melhor vizualização)
  
  # Como usar o Simulador
- Recado: O simulador não lida bem com colisões, tente evitá-las
+ OBS: O simulador não lida bem com colisões, tente evitá-las
  
  ## Recursos Necessários
  Certifique-se que seu computador tem a versão python 3.10+ devidamente instalada, caso tiver instale as bibliotecas pyglet, matplotlib e numpy.
@@ -51,8 +51,7 @@ $\hat{r}$: versor radial centrado no corpo que produz a força.
 3. A razão entre o quadrado do período orbital de um objeto e o cubo do semi-eixo maior de sua órbita é a mesma para todos os objetos que orbitam o mesmo primário. Como vai simular isso???????????????????????????????
  
 ## Sistema de Três Corpos
-O programa permite que o usuário escolha quaisquer configurações iniciais para os objetos, porém, é interessante deixar algumas situações já pré-preparadas, algumas delas serão soluções estáveis e outra um sistema Lua-Terra-Sol
+O programa permite que o usuário escolha quaisquer configurações iniciais para os objetos, porém, é interessante deixar algumas situações já pré-preparadas, algumas delas serão soluções estáveis e outra um sistema Lua-Terra-Sol.
 
-##Autores
+## Autores
 Essa simulação foi desenvolvida por Murilo Leandro Garcia, Matheus Guilherme Ferreira Mendonça Learte e Renan Banci Catarin. Se trata de um projeto para a disciplina de física
-
