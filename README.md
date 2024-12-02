@@ -16,4 +16,9 @@
   <img src="https://latex.codecogs.com/png.latex?\pagecolor{black}\vec{F}%20%3D%20G%20\frac{m_1m_2}{r^2}\hat{r}%20"
 alt="Equação da Gravidade" width="200"/>
 </div>
+onde:
+G: Constante gravitacional.
+m1 e m2: Massa dos corpos.
+r: distância entre os dois corpos.
+r(com chapeu em cima): vetor unitário na direção que conecta os dois corpos.
 
