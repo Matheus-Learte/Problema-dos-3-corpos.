@@ -48,7 +48,7 @@ $\hat{r}$: versor radial centrado no corpo que produz a força.
    
  2. Lei das áreas: Uma linha que une o planeta e o Sol varre áreas iguais durante intervalos de tempo iguais. Simulando o sistema é possível perceber que a Terra é mais veloz quando passa perto do sol ao comparar de quando está longe, isso aliado com o movimento de elipse permite a ocorrencia da segunda lei.
  
-3. A razão entre o quadrado do período orbital de um objeto e o cubo do semi-eixo maior de sua órbita é a mesma para todos os objetos que orbitam o mesmo primário. Como vai simular isso???????????????????????????????
+3. A razão entre o quadrado do período orbital de um objeto e o cubo do semi-eixo maior de sua órbita é a mesma para todos os objetos que orbitam o mesmo primário. Os valores do período e do semi-eixo serçao calculados e comparados em diferentes situações
  
 ## Sistema de Três Corpos
  Já quando a simulação entra no caso de 3 ou mais corpos a física muito mais complexa e caótica. Cada um dos corpos terá seu movimento influenciado simultaneamente pela força gravitacional exercida pelos outros corpos. Algumas características do sistema de três ou mais corpos inclui:
