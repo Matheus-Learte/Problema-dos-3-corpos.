@@ -21,10 +21,7 @@ Foram feitas as seguintes simulações:
 
 Esses dois primeiros exemplos utilizaram a seguinte fórmula para velocidade de órbita:
 
- <div align="center">
-  <img src="https://latex.codecogs.com/png.latex?v_{orb} = \sqrt{\frac{GM}{r}}"
-alt="Velocidade de órbita" width="200"/>
-</div>
+![Velocidade de órbita](https://latex.codecogs.com/png.latex?v_%7Borb%7D%20%3D%20%5Csqrt%7B%5Cfrac%7BGM%7D%7Br%7D%7D)
 
 Garantindo uma órbita (quase) perfeitamente circular.
 
@@ -40,10 +37,7 @@ A física por trás da simulação é baseada na Lei da Gravitação Universal p
 
 A aceleração de um corpo A sendo atraído por um corpo B é dada pela seguinte fórmula:
 
- <div align="center">
-  <img src="https://latex.codecogs.com/png.latex?\vec{a} = \frac{GM\vec{r}}{r^3}"
-alt="Equação da Gravidade" width="200"/>
-</div>
+![Equação da Gravidade](https://latex.codecogs.com/png.latex?%5Cvec%7Ba%7D%20%3D%20%5Cfrac%7BGM%5Cvec%7Br%7D%7D%7Br%5E3%7D)
 
 onde: G é Constante gravitacional, M é a massa do corpo B, o vetor r (com a seta) é a o vetor da posição do corpo A com origem no corpo B, e r (sem a seta) é módulo do vetor r.
 
