@@ -46,6 +46,10 @@ Para a velocidade obtivemo-a através da EDO:
 
 ![EDO vel](/img/acl.svg)
 
+E a posição é obtida através da EDO:
+
+![EDO pos](/img/pos.svg)
+
 Para as duas primeiras simulações, foi utilizado a seguinte fórmula para velocidade de órbita:
 
 ![Velocidade de órbita](https://latex.codecogs.com/png.latex?v_%7Borb%7D%20%3D%20%5Csqrt%7B%5Cfrac%7BGM%7D%7Br%7D%7D)
