@@ -1,65 +1,79 @@
-# Descrição
- Esse programa utiliza a biblioteca Pyglet para realizar simulações de sistemas gravitacionais em 2D. Nele se é possível criar n corpos no espaço e definir suas velocidades e direções iniciais. Após isso, a simulação está pronta para ser iniciada, será possível observar a interação que os planetas tem entre si e também um gráfico que contem a decomposição do vetor velocidade (em x e y) ao longo da trajetória em tempo real. Apesar de o projeto suportar n corpos, a sua motivação principal é descrever o movimento de sistemas com dois e três corpos, demonstrando as Leis de Kepler e modelos interessantes como estados iniciais dos 3 corpos.  Além disso a simulação será livre para o usuário intragir.
+# Simulação de Gravidade com Pyglet
+ Esse programa utiliza a biblioteca Pyglet para realizar simulações de sistemas gravitacionais em 2D. Nele se é possível criar n corpos no espaço e definir suas velocidades e direções iniciais. Após isso, a simulação está pronta para ser iniciada, será possível observar a interação que os planetas tem entre si e também um gráfico contendo a velocidade e aceleração dos corpos.
 
- As imagens de astros disponíveis são apenas Sol, Terra e Lua, cada um com sua massa e tamanho aparente distintos (fora de escala para melhor vizualização)
- 
  # Como usar o Simulador
- OBS: O simulador não lida bem com colisões, tente evitá-las
- 
- ## Recursos Necessários
- Certifique-se que seu computador tem a versão python 3.10+ devidamente instalada, caso tiver instale as bibliotecas pyglet, matplotlib e numpy.
-
- ## Efetivar a Simulação
-1. Adicionar corpos:
-   - Clique na tela para adicionar um corpo.
+ 1. Adicionar corpos:
+   - Clique na tela com o botão esquerdo para adicionar um corpo.
    - Ainda segurando o botão esquerdo araste o mouse para definir a direção e a velocidade inicial do corpo.
-   - Por fim, é possível trocar o astro que está sendo adicionado clicando nos botões 1, 2 e 3, sendo referentes a Lua, Terra e Sol respectivamente
-2. Iniciar a simulção:
-  - Após ja ter adicionado um corpo com sua direção e velocidade basta apenas apertar Enter e observar a simulação.
-3. Parar a simulação:
-  - Para reiniciar a simulação e iniciar uma nova basta apertar a tecla "R"
-  - Para fechar o programa basta que aperte Enter enquanto a simulação esteja rodando.
+   - Depois de soltar o botão esquerdo, aperte as teclas 1, 2, 3 para mudar o corpo para Lua, Terra e Sol, respectivamente.
+   - Repita até preparar o estado inicial da simulação.
+2. Iniciar a simulação:
+  - Após já ter adicionado um corpo com sua direção e velocidade basta apenas apertar Enter e observar a simulação.
+  - Para resetar a simulação, aperte R.
+  
+## Simulações
 
-# Física implementada
- A física por trás da simulação é relacionada com a Lei da Gravitação Universal prosposta por Isaac Newton, onde a aceleração de cada corpo é calculada considerando as forças gravitacionais que ele sente devido a presença dos outros corpos no sistema.
- 
- A Lei proposta por Newton diz que a força gravitacional entre dois corpos é dada por:
- 
-<div align="center">
-  <img src="/img/offof(1).png" alt="Formula" width="200">
+Foram feitas as seguintes simulações:
+
+1. Sistema de orbita circular Terra e Sol.
+
+2. Sistema de orbita circular Lua e Terra.
+
+Esses dois primeiros exemplos utilizaram a seguinte fórmula para velocidade de órbita:
+
+ <div align="center">
+  <img src="https://latex.codecogs.com/png.latex?v_{orb} = \sqrt{\frac{GM}{r}}"
+alt="Velocidade de órbita" width="200"/>
 </div>
 
-onde:
+Garantindo uma órbita (quase) perfeitamente circular.
 
-$G$: Constante de gravitação, tem valor de $6,67 \times 10^{-11} N \, m^2 \, kg^{-2}.$
+3. Sistema de orbita eliptica Terra e Sol.
 
-$m_1$ e $m_2$: Massa dos corpos 1 e 2 respectivamente.
+4. Colisão de dois corpos inicialmente parados.
 
-$r$: distância entre os dois corpos.
+5. Sistema de três corpos em posições simétricas (triângulo equilátero) e com velocidades similares.
 
-$\hat{r}$: versor radial centrado no corpo que produz a força.
+## Análise física
 
-## Leis de Kepler
- A melhor forma de demonstrar as leis do movimento planetário, desenvolvidas por Kepler, é por meio de um sistema de dois corpos em que um está praticamente parado. Por familiaridade trataremos eles como um simples sistema Sol-Terra.
+A física por trás da simulação é baseada na Lei da Gravitação Universal prosposta por Isaac Newton, onde a aceleração de cada corpo é calculada considerando as forças gravitacionais que ele sente devido a presença dos outros corpos no sistema.
 
- Resumindo as Leis e relacionando com a simulação:
+A aceleração de um corpo A sendo atraído por um corpo B é dada pela seguinte fórmula:
 
- 1. Lei das óbitas elipticas: A órbita da Terra descreve uma trajetória elíptica, em que o Sol é um de seus centros. No programa, a trajetória do corpo em órbita será demarcada com um traço cheio para melhor vizualização em contraste com o fundo escolhido.
-   
- 2. Lei das áreas: Uma linha que une o planeta e o Sol varre áreas iguais durante intervalos de tempo iguais. Simulando o sistema é possível perceber que a Terra é mais veloz quando passa perto do sol ao comparar de quando está longe, isso aliado com o movimento de elipse permite a ocorrencia da segunda lei.
- 
-3. A razão entre o quadrado do período orbital de um objeto e o cubo do semi-eixo maior de sua órbita é a mesma para todos os objetos que orbitam o mesmo primário. Os valores do período e do semi-eixo serçao calculados e comparados em diferentes situações
- 
-## Sistema de Três Corpos
- Já quando a simulação entra no caso de 3 ou mais corpos a física muito mais complexa e caótica. Cada um dos corpos terá seu movimento influenciado simultaneamente pela força gravitacional exercida pelos outros corpos. Algumas características do sistema de três ou mais corpos inclui:
- 
- 1. Interações Complexas:
-    Como cada corpo irá sentir a força de todos os outros corpos, se terá como resultado órbitas instáveis e imprevisíveis.
+ <div align="center">
+  <img src="https://latex.codecogs.com/png.latex?\vec{a} = \frac{GM\vec{r}}{r^3}"
+alt="Equação da Gravidade" width="200"/>
+</div>
 
-2. Órbitas Caóticas:
-   O grande problema em sistemas com mais de 2 corpos é que não se há funções analíticas gerais que descrevem o movimento de um sistema de 3 corpos. Nó simulador calculamos o movimento numéricamente através do método de Euler.
+onde: G é Constante gravitacional, M é a massa do corpo B, o vetor r (com a seta) é a o vetor da posição do corpo A com origem no corpo B, e r (sem a seta) é módulo do vetor r.
 
- Mas, mesmo com essas todas caracteristicas, ainda sim existem soluções estáveis para sistemas de três corpos como órbitas troianas (onde troianos são corpos astrônomicos, como asteróides ou satélites, que orbitam planetas ou satélites maiores), mas se é necessário condições iniciais precisas. 
+Essa fórmula é mais simples de se calcular no programa, visto que não é necessário o vetor unitário de direção da força (pois este é obtido dividindo o vetor r por seu módulo, e daí vem o expoente 3 ao invés do expoente 2 que é normalmente visto).
 
-## Autores
-Essa simulação foi desenvolvida por Murilo Leandro Garcia, Matheus Guilherme Ferreira Mendonça Learte e Renan Banci Catarin. Se trata de um projeto para a disciplina de física
+Para a primeira simulação, podemos observar pelo gráfico abaixo que tanto a aceleração quanto a velocidade se mantiveram constante (aproximadamente, visto que o Sol não era perfeitamente estático), e que as projeções nos eixo X e Y seguem curvas senoidais. Isso segue exatamente as previsões feitas pelas fórmulas físicas.
+
+![Terra e Sol circular](midia/sol%20terra.png)
+
+Na terceira simulação, é possível observar a primeira lei de Kepler, a terra segue uma órbita eliptica, com o sol em um dos focos:
+
+![Elipse](midia/elipse.gif)
+
+Foram calculados os períodos de órbita e seus semieixos maiores para aplicar a terceira lei de Kepler.
+
+Para obter o período (T), basta calcular a distância de cada pico de aceleração/velocidade da elipse, que corresponde ao periélio:
+
+![Elipse](midia/elipse.png)
+
+Já para o semieixo maior (R), bastou somar a distância ao sol no periélio e no afélio e dividir por 2.
+
+Foram obtidos os seguintes resultados para a primeira e terceira simulação:
+
+1. T = 3.1, R = 200, R³/T² = 8.3 * 10⁵
+2. T = 1.2, R = 108 ,R³/T² = 8.7 * 10⁵
+
+Que são aproxidamente iguais, como previsto pela terceira lei de kepler.
+
+Na quinta simulação, podemos observar comportamento caótico num sistema de três corpos:
+
+![Caos](midia/caos.gif)
+
+![Caos](midia/caos.png)
