@@ -38,6 +38,9 @@ A aceleração de um corpo A sendo atraído por um corpo B é dada pela seguinte
 
 ![Equação da Gravidade](https://latex.codecogs.com/png.latex?%5Cvec%7Ba%7D%20%3D%20%5Cfrac%7BGM%5Cvec%7Br%7D%7D%7Br%5E3%7D)
 
+Onde a velocidade é obtida através da EDO:
+![EDO vel](/img/acl.svg)
+
 onde: G é Constante gravitacional, M é a massa do corpo B, o vetor r (com a seta) é a o vetor da posição do corpo A com origem no corpo B, e r (sem a seta) é módulo do vetor r.
 
 Essa fórmula é mais simples de se calcular no programa, visto que não é necessário o vetor unitário de direção da força (pois este é obtido dividindo o vetor r por seu módulo, e daí vem o expoente 3 ao invés do expoente 2 que é normalmente visto).
