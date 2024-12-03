@@ -30,8 +30,10 @@ fig, ax = plt.subplots()
 X = []
 Y1 = []
 Y2 = []
+Y_res = []
 plot1 = ax.plot(X, Y1, label="Velocidade, eixo X")[0]
 plot2 = ax.plot(X, Y2, label="Velocidade, eixo Y")[0]
+plot3 = ax.plot(X, Y_res, label="Velocidade Resultante")[0]
 ax.legend()
 
 N = 400
@@ -49,13 +51,20 @@ def update_plot():
     Y2.append(earth["vel"][1])
     if len(Y2) > N: Y2.pop(0)
 
+    v_res = np.sqrt(earth["vel"][0]**2 + earth["vel"][1]**2)
+    Y_res.append(v_res)
+    if len(Y_res) > N: Y_res.pop(0)
+
     plot1.set_xdata(X[-len(Y1):])
     plot2.set_xdata(X[-len(Y2):])
     plot1.set_ydata(Y1)
     plot2.set_ydata(Y2)
-    ax.set_xlim(min(X), max(X))
-    ax.set_ylim(min(min(Y1), min(Y2)), max(max(Y1), max(Y2)))
+    plot3.set_xdata(X[-len(Y_res):])
+    plot3.set_ydata(Y_res)
 
+    ax.set_xlim(min(X), max(X))
+    ax.set_ylim(min(min(Y1), min(Y2), min(Y_res)), 
+            max(max(Y1), max(Y2), max(Y_res)))
     fig.canvas.draw()
     fig.canvas.flush_events()
 
