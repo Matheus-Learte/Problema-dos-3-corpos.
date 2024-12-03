@@ -1,13 +1,16 @@
-# Simulação de Gravidade com Pyglet
- Esse programa utiliza a biblioteca Pyglet para realizar simulações de sistemas gravitacionais em 2D. Nele se é possível criar n corpos no espaço e definir suas velocidades e direções iniciais. Após isso, a simulação está pronta para ser iniciada, será possível observar a interação que os planetas tem entre si e também um gráfico contendo a velocidade e aceleração dos corpos.
+# Simulação de Gravidade em python
+ Este programa utiliza as bibliotecas Pyglet e Matplotlib para realizar simulações de sistemas gravitacionais em 2D. Nele se é possível criar n corpos no espaço e definir suas velocidades e direções iniciais. Após isso, a simulação está pronta para ser iniciada, será possível observar a interação que os planetas tem entre si e também um gráfico contendo a velocidade e aceleração dos corpos. É também possível rodar configurações pré-definidas.
 
- # Como usar o Simulador
- 1. Adicionar corpos:
-   - Clique na tela com o botão esquerdo para adicionar um corpo.
-   - Ainda segurando o botão esquerdo araste o mouse para definir a direção e a velocidade inicial do corpo.
-   - Depois de soltar o botão esquerdo, aperte as teclas 1, 2, 3 para mudar o corpo para Lua, Terra e Sol, respectivamente.
-   - Repita até preparar o estado inicial da simulação.
-2. Iniciar a simulação:
+## Como usar o Simulador
+1. Iniciar o programa:
+  - Abra o script `main.py` com o python: `python main.py`
+  - Você pode passar um número como argumento para escolher a configuração pré-definida: `python main.py 1`
+2. Adicionar corpos:
+  - Clique na tela com o botão esquerdo para adicionar um corpo.
+  - Ainda segurando o botão esquerdo araste o mouse para definir a direção e a velocidade inicial do corpo.
+  - Depois de soltar o botão esquerdo, aperte as teclas 1, 2, 3 para mudar o corpo para Lua, Terra e Sol, respectivamente.
+  - Repita até preparar o estado inicial da simulação.
+3. Iniciar a simulação:
   - Após já ter adicionado um corpo com sua direção e velocidade basta apenas apertar Enter e observar a simulação.
   - Para resetar a simulação, aperte R.
   
@@ -18,12 +21,6 @@ Foram feitas as seguintes simulações:
 1. Sistema de orbita circular Terra e Sol.
 
 2. Sistema de orbita circular Lua e Terra.
-
-Esses dois primeiros exemplos utilizaram a seguinte fórmula para velocidade de órbita:
-
-![Velocidade de órbita](https://latex.codecogs.com/png.latex?v_%7Borb%7D%20%3D%20%5Csqrt%7B%5Cfrac%7BGM%7D%7Br%7D%7D)
-
-Garantindo uma órbita (quase) perfeitamente circular.
 
 3. Sistema de orbita eliptica Terra e Sol.
 
@@ -45,7 +42,13 @@ onde: G é Constante gravitacional, M é a massa do corpo B, o vetor r (com a se
 
 Essa fórmula é mais simples de se calcular no programa, visto que não é necessário o vetor unitário de direção da força (pois este é obtido dividindo o vetor r por seu módulo, e daí vem o expoente 3 ao invés do expoente 2 que é normalmente visto).
 
-Para a primeira simulação, podemos observar pelo gráfico abaixo que tanto a aceleração quanto a velocidade se mantiveram constante (aproximadamente, visto que o Sol não era perfeitamente estático), e que as projeções nos eixo X e Y seguem curvas senoidais. Isso segue exatamente as previsões feitas pelas fórmulas físicas.
+Para as duas primeiras simulações, foi utilizado a seguinte fórmula para velocidade de órbita:
+
+![Velocidade de órbita](https://latex.codecogs.com/png.latex?v_%7Borb%7D%20%3D%20%5Csqrt%7B%5Cfrac%7BGM%7D%7Br%7D%7D)
+
+Garantindo uma órbita (quase) perfeitamente circular.
+
+Na primeira simulação, podemos observar pelo gráfico abaixo que tanto a aceleração quanto a velocidade se mantiveram constante (aproximadamente, visto que o Sol não era perfeitamente estático), e que as projeções nos eixo X e Y seguem curvas senoidais. Isso segue exatamente as previsões feitas pelas fórmulas físicas.
 
 ![Terra e Sol circular](midia/sol%20terra.png)
 
