@@ -51,7 +51,15 @@ $\hat{r}$: versor radial centrado no corpo que produz a força.
 3. A razão entre o quadrado do período orbital de um objeto e o cubo do semi-eixo maior de sua órbita é a mesma para todos os objetos que orbitam o mesmo primário. Como vai simular isso???????????????????????????????
  
 ## Sistema de Três Corpos
-O programa permite que o usuário escolha quaisquer configurações iniciais para os objetos, porém, é interessante deixar algumas situações já pré-preparadas, algumas delas serão soluções estáveis e outra um sistema Lua-Terra-Sol.
+ Já quando a simulação entra no caso de 3 ou mais corpos a física muito mais complexa e caótica. Cada um dos corpos terá seu movimento influenciado simultaneamente pela força gravitacional exercida pelos outros corpos. Algumas características do sistema de três ou mais corpos inclui:
+ 
+ 1. Interações Complexas:
+    Como cada corpo irá sentir a força de todos os outros corpos, se terá como resultado órbitas instáveis e imprevisíveis.
+
+2. Órbitas Caóticas:
+   O grande problema em sistemas com mais de 2 corpos é que não se há funções analíticas gerais que descrevem o movimento de um sistema de 3 corpos. Nó simulador calculamos o movimento numéricamente através do método de Euler.
+
+ Mas, mesmo com essas todas caracteristicas, ainda sim existem soluções estáveis para sistemas de três corpos como órbitas troianas (onde troianos são corpos astrônomicos, como asteróides ou satélites, que orbitam planetas ou satélites maiores), mas se é necessário condições iniciais precisas. 
 
 ## Autores
 Essa simulação foi desenvolvida por Murilo Leandro Garcia, Matheus Guilherme Ferreira Mendonça Learte e Renan Banci Catarin. Se trata de um projeto para a disciplina de física
