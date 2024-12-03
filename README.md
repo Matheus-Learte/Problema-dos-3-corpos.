@@ -31,6 +31,8 @@ Garantindo uma órbita (quase) perfeitamente circular.
 
 5. Sistema de três corpos em posições simétricas (triângulo equilátero) e com velocidades similares.
 
+6. Sistema Sol, Terra, Lua.
+
 ## Análise física
 
 A física por trás da simulação é baseada na Lei da Gravitação Universal prosposta por Isaac Newton, onde a aceleração de cada corpo é calculada considerando as forças gravitacionais que ele sente devido a presença dos outros corpos no sistema.
@@ -71,3 +73,11 @@ Na quinta simulação, podemos observar comportamento caótico num sistema de tr
 ![Caos](midia/caos.gif)
 
 ![Caos](midia/caos.png)
+
+Por fim, foi feita uma simulação de três corpos com o Sol, a Terra e a Lua:
+
+![Sistema solar](midia/solterralua.gif)
+
+Fazendo o gráfico de aceleração/velocidade da lua, podemos observar um tendência interessante: Por conta das contribuições de rotação do Sol (período longo) quanto da Terra (período curto), a velocidade da lua se aproxima de duas senoidais, uma de período longo e outra curta:
+
+![Sistema solar](midia/solterralua.png)

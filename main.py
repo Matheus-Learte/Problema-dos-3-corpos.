@@ -306,6 +306,34 @@ def preset5():
     planets[0]["vel"] = (planets[1]["pos"] - planets[0]["pos"]) * 0.7
     planets[1]["vel"] = (planets[2]["pos"] - planets[1]["pos"]) * 0.7
 
+# sol terra lua
+def preset6():
+    global planets
+    planets.append({
+        "pos": np.array((400.0, 300.0)),
+        "vel": np.array((0.0, 0.0)),
+        "acc": np.array((0.0, 0.0)),
+        "mass": 10000,
+        "img": sol,
+        "id": len(planets)
+    })
+    planets.append({
+        "pos": np.array((650.0, 300.0)),
+        "vel": np.array((0.0, -346.0)),
+        "acc": np.array((0.0, 0.0)),
+        "mass": 100,
+        "img": terra,
+        "id": len(planets)
+    })
+    planets.append({
+        "pos": np.array((660.0, 300.0)),
+        "vel": np.array((0.0, -173.0)),
+        "acc": np.array((0.0, 0.0)),
+        "mass": 1,
+        "img": lua,
+        "id": len(planets)
+    })
+
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         a = sys.argv[1]
@@ -321,5 +349,7 @@ if __name__ == "__main__":
         preset4()
     elif a == "5":
         preset5()
+    elif a == "6":
+        preset6()
 
     pyglet.app.run()
